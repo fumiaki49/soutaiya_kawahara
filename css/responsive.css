@@ -1,0 +1,283 @@
+@media screen and (min-width: 951px) {
+  .navigation_mobile, .header_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  * {
+    font-size: 18px;
+  }
+
+  .navigation_pc {
+    display: none;
+  }
+
+  .header, .main-area, .footer {
+    margin-left: unset;
+  }
+
+  .header {
+    padding-top: unset;
+  }
+
+  .top-image {
+    padding-top: 120px;
+  }
+
+  .top-image h1 {
+    top: 175px;
+  }
+
+  .header_mobile {
+    width: 100%;
+    height: 80px;
+    background-color: #ECDAB8;
+    position: fixed;
+    z-index: 100000;
+  }
+
+  .header-inner {
+    width: 90%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-inner .header-title.open {
+    opacity: 0;
+    transition: ease 0.4s;
+  }
+
+  .header-inner .hamberger-btn {
+    width: 30px;
+  }
+
+  .header-inner .hamberger-btn span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: ease 0.4s;
+    display: block;
+  }
+
+  .header-inner .hamberger-btn span:nth-child(1) {
+    top: 0;
+  }
+  .header-inner .hamberger-btn span:nth-child(2) {
+    margin: 8px 0;
+  }
+  .header-inner .hamberger-btn span:nth-child(3) {
+    top: 0;
+  }
+
+  .header-inner .hamberger-btn.open {
+    transform: translateX(0);
+  }
+  .header-inner .hamberger-btn.open span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  .header-inner .hamberger-btn.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .header-inner .hamberger-btn.open span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+  }
+
+  .navigation_mobile {
+    position: fixed;
+    opacity: 0;
+    height: 100vh;
+    background-color: #ECDAB8;
+    width: 100%;
+    margin-top: -100vh;
+    transition: ease 0.4s;
+    z-index: 10000;
+  }
+
+  .navigation_mobile ul li {
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-top: 10px;
+  }
+
+  .navigation_mobile ul li:first-child {
+    margin-top: 0;
+  }
+
+  .navigation_mobile.open {
+    margin-top: 80px;
+    opacity: 1;
+    overflow: scroll;
+  }
+
+  .navigation_mobile .content-box {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+
+  .about_service .ceo-profile .profile-text {
+    margin-left: 20px;
+  }
+
+  .about_contact .contact-method .telephone-number p {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .navigation_mobile .content-box {
+    width: 85%;
+  }
+
+  .about_service .ceo-profile {
+    display: block;
+    text-align: center;
+  }
+
+  .about_service .ceo-profile .profile-image {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .about_service .ceo-profile .profile-text {
+    margin-left: unset;
+    margin-top: 15px;
+  }
+
+  .about_contact .contact-method .telephone-number {
+    display: block;
+  }
+
+  .about_contact .contact-method .telephone-number p {
+    width: fit-content;
+    margin-right: unset;
+    margin: 0 auto;
+  }
+  .about_contact .contact-method .telephone-number p:last-child {
+    margin-right: auto;
+    margin-top: 15px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .top-image h1 {
+    font-size: 18px;
+    top: 140px;
+    left: 10px;
+  }
+
+  .top-image h1 .bigger-text {
+    font-size: 24px;
+  }
+
+  .about_service-flow .contents-wrapper {
+    width: 85%;
+  }
+
+  .flow-details {
+    margin-top: 20%;
+  }
+
+  .flow-details .details-images {
+    display: block;
+  }
+
+  .flow-details .details-images .image:nth-child(odd) {
+    margin-right: 35%;
+  }
+  .flow-details .details-images .image:nth-child(even) {
+    margin-left: 35%;
+  }
+
+  .flow-details .details-images .image.one-sheet {
+    margin: 0 auto;
+  }
+
+  .flow-details .details-images .image, .flow-details .details-images .image.one-sheet {
+    width: 65%;
+    margin-top: 5%;
+  }
+
+  .about_contact .contact-method .address li p {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  * {
+    font-size: 16px;
+  }
+
+  .header_mobile {
+    height: 60px;
+  }
+
+  .header_mobile .header-title {
+    font-size: 12px;
+  }
+
+  .navigation_mobile.open {
+    margin-top: 60px;
+  }
+
+  .top-image {
+    padding-top: 90px;
+  }
+
+  .top-image h1 {
+    font-size: 18px;
+    top: 140px;
+    left: 10px;
+  }
+
+  .top-image h1 .bigger-text {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 21px;
+  }
+
+  .about_service .ceo-profile .profile-text h2 .name {
+    font-size: 21px;
+  }
+
+  .about_price .details h2 {
+    font-size: 18px;
+  }
+
+  .about_contact .contact-method .telephone-number p span {
+    font-size: 24px;
+  }
+
+  .about_contact .contact-method .line button {
+    padding: 10px 60px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .top-image h1 {
+    font-size: 14px;
+    top: 105px;
+  }
+
+  .top-image h1 .bigger-text {
+    font-size: 20px;
+  }
+
+  .navigation_mobile .content-box {
+    margin-top: 30px;
+  }
+
+  .navigation_mobile .content-box:first-child {
+    margin-top: 0;
+  }
+}

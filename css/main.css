@@ -1,0 +1,368 @@
+* {
+  font-family: 'Klee One', cursive;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+img {
+  width: 100%;
+}
+
+.default-body {
+  background-color: #F5F4F0;
+}
+
+.annotation {
+  padding-left: 1em;
+  text-indent: -1em;
+  color: #434343;
+  margin-top: 5px;
+}
+
+.storong {
+  font-family: 'Yuji Syuku';
+  color: #CB5454;
+}
+
+.underline {
+  background: linear-gradient(#F5F4F0 70%,#FADBDA 0%);
+}
+
+.navigation_pc {
+  width: 20%;
+  height: 100vh;
+  background-color: #ECDAB8;
+  padding: 15px;
+  padding-bottom: 3%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.navigation_pc .content-box {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.navigation_pc .content-box:last-child {
+  margin-bottom: 0;
+}
+
+.navigation_pc .content-box h3, .navigation_mobile .content-box h3 {
+  text-align: center;
+  border-bottom: 1.5px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 18px;
+}
+
+.navigation_pc .content-box h3 .nav-title, .navigation_mobile .content-box h3 .nav-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navigation_pc .content-box ul {
+  padding: 0 10px;
+}
+
+.navigation_pc .content-box ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 18px;
+  line-height: 1.3em;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.navigation_pc .content-box ul li.smoothScrollTriger:hover {
+  opacity: 0.5;
+}
+
+.navigation_pc .content-box ul li a {
+  font-size: 16px;
+}
+
+.navigation_pc .content-box ul li:first-child {
+  margin-top: 0;
+}
+
+.header {
+  margin-left: 20%;
+  padding-top: 3%;
+}
+
+.header .top-image {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .top-image img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.top-image h1 {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-image h1 .bigger-text {
+  font-size: 34px;
+}
+
+.main-area {
+  margin-left: 20%;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+section:first-child {
+  margin-top: 15%;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.contents-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+
+/* サービス内容 */
+.about_service .ceo-profile {
+  display: flex;
+  align-items: flex-end;
+}
+
+.about_service .ceo-profile .profile-image {
+  width: 30%;
+}
+
+.about_service .ceo-profile .profile-text {
+  margin-left: 60px;
+}
+
+.about_service .ceo-profile .profile-text h2 {
+  margin-bottom: 15px;
+}
+
+.about_service .ceo-profile .profile-text h2 .name {
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+
+.about-cemetery {
+  margin-top: 40px;
+}
+
+.about-cemetery figcaption {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+/* サービスの流れ */
+.flow-details {
+  margin-top: 5%;
+}
+
+.flow-details:first-child {
+  margin-top: 0;
+}
+
+.flow-details h2 {
+  padding-left: 1em;
+  text-indent: -2em;
+}
+
+.flow-details h2 .number {
+  font-size: 24px;
+}
+
+.flow-details .details-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flow-details .details-images .image {
+  width: 40%;
+  object-fit: contain;
+  margin-top: 3%;
+}
+
+
+/* 基本料金 */
+.about_price .details {
+  margin-top: 40px;
+}
+
+.about_price .details:first-child {
+  margin-top: 0;
+}
+
+.about_price .details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 10px;
+}
+
+/* お問い合わせ */
+.about_contact {
+  padding-bottom: 50px;
+}
+
+.about_contact .explain-text {
+  font-weight: bold;
+}
+
+.about_contact .contact-method {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.about_contact .contact-method .title {
+  text-align: center;
+  display: block;
+  padding: 5px 0;
+}
+
+.about_contact .contact-method .content {
+  padding: 25px 20px;
+}
+
+.about_contact .contact-method .title.method_tell {
+  background-color: #E3C488;
+}
+.about_contact .contact-method .title.method_line {
+  background-color: #54BB3A;
+  color: #fff;
+}
+
+.about_contact .contact-method .address {
+  text-align: center;
+}
+
+.about_contact .contact-method .address li {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.about_contact .contact-method .address li p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.about_contact .contact-method .address li:first-child {
+  margin-top: 0;
+}
+
+/* .about_contact .contact-method .shop-address {
+  padding: 20px 20px 0 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about_contact .contact-method .shop-address p {
+  padding-left: 3.5em;
+  text-indent: -3.5em;
+}
+
+.about_contact .contact-method .shop-address span {
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.about_contact .contact-method .telephone-number {
+  display: flex;
+  justify-content: center;
+}
+
+.about_contact .contact-method .telephone-number p {
+  margin-right: 75px;
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+}
+
+.about_contact .contact-method .telephone-number p:last-child {
+  margin-right: 0;
+}
+
+.about_contact .contact-method .telephone-number p span {
+  font-size: 28px;
+  padding-left: 5px;
+  font-weight: bold;
+} */
+
+.about_contact .contact-method .line {
+  text-align: center;
+}
+
+.about_contact .contact-method .line button {
+  background-color: #54BB3A;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 90px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.about_contact .contact-method .line a {
+  display: inline-block;
+  position: relative;
+}
+
+.about_contact .contact-method .line a::before {
+  content:'';
+  /*絶対配置でキラッと光るの位置を決める*/
+  position: absolute;
+  top: 0;
+  left: -75%;
+  /*キラッと光る形状*/
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  transform: skewX(-25deg);
+}
+.about_contact .contact-method .line a:hover::before {
+  animation: shine 0.7s;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/* フッター */
+.footer {
+  background-color: #48433F;
+  color: #fff;
+  margin-left: 20%;
+  padding: 15px 0;
+  font-size: 18px;
+  text-align: center;
+}

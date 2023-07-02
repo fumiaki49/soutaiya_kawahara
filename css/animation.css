@@ -1,0 +1,9 @@
+.fadeIn-content_scroll {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 1s;
+}
+.fadeIn-content_scroll.is-show {
+  opacity: 1; 
+  transform: translateY(0px);
+}
